@@ -1,0 +1,287 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background: #1B1212;
+    color: #FFFFFF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.5s; 
+}
+
+.navbar a.active {
+    color: #ED45AD;
+}
+
+.navbar a:hover {
+    color: #ED45AD;
+}
+
+body {
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 3px 4px #FFFFFF;
+    border-radius: 5px;
+}
+
+.wrapper h2 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.wrapper h2::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    top: 100px;
+    left: 20px;
+    width: 18%;
+    background: #E50D73;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.form-section ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-details .icons {
+    background: #FFC0CB;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.form-details li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #FFFFFF;
+    margin: 0.8rem 0;
+    font-size: 23px;
+}
+
+.form-details li i {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.form-details strong {
+    color: #D87093;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group .form-control {
+    width: 100%;
+    outline: none;
+    border: 1px solid #DDDDDD;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group label {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    padding: 1rem;
+    pointer-events: none;
+    font-size: 0.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    display: block;
+}
+
+.form-group label:last-child {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    margin-top: 5px;
+    color: #808080;
+    font-style: italic;
+}
+
+.input-field {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #808080;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 1%;
+}
+
+.input-field button {
+    outline: none;
+    border: none;
+    background: #FFC0CB;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-device-width : 480px) {
+    body {
+        overflow: visible;
+    }
+
+    .introduction {
+        width: 100%;
+        height: 80dvh;
+        flex-wrap: wrap;
+    }
+
+    h1, p, li {
+        align-self: auto;
+        font-size: x-small;
+    }
+    
+    #mainPage, #skillsPage, #projectsPage,#aboutPage {
+        font-size: 10px;
+    }
+
+    .form-section {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .wrapper h2 {
+        font-size: 10px;
+    }
+    
+    .wrapper h2::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        top: 90px;
+    }
+
+    .form-details li {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .form-details {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-device-width : 600px) {
+    body {
+        overflow: visible;
+    }
+
+    .introduction {
+        width: 100%;
+        height: 80dvh;
+        flex-wrap: wrap;
+    }
+
+    h1, p, li {
+        align-self: auto;
+        font-size: x-small;
+    }
+    
+    #mainPage, #skillsPage, #projectsPage,#aboutPage {
+        font-size: 10px;
+    }
+
+    .form-section {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .wrapper h2 {
+        font-size: 10px;
+    }
+    
+    .wrapper h2::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        top: 90px;
+    }
+
+    .form-details li {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .form-details {
+        margin: 20px 0;
+    }   
+}
+
+
+

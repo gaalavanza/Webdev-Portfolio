@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">   
+    </head>
+    <body>
+        <header class="header">
+            <p class="logo">My Portfolio.</p>
+            <nav class="navbar">
+                <a href="../index.html" id="mainPage" target="_blank">Home</a>
+                <a href="../about-page/about.html" id="aboutPage" target="_blank">About</a>
+                <a href="../skills/skills.html" id="skillsPage" target="_blank">Skills</a>
+                <a href="../projects/projects.html" id="projectsPage" target="_blank">Projects</a>
+                <a href="contact.html" id="contactPage" class="active">Contact</a>
+            </nav>
+        </header>
+        <div class="form-container">
+            <div class="wrapper">
+                <h2>Contact Me!</h2>
+                <div class="form-section">
+                    <div class="form-details">
+                        <ul>
+                            <li>
+                                <div class="icons"><i class="fa fa-location-dot"></i></div>
+                                <div class="content"><strong>Location:</strong><p>Katrina Homes, Batinguel, Dumaguete City</p></div>
+                            </li>
+                            <li>
+                                <div class="icons"><i class="fa fa-envelope"></i></div>
+                                <div class="content"><strong>Email:</strong><p>gaalavanza@gmail.com</p></div>
+                            </li>
+                            <li>
+                                <div class="icons"><i class="fa fa-phone-volume"></i></div>
+                                <div class="content"><strong>Call:</strong><p>+63 915-320-2448</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input-field">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="formControlInput" class="form-label">Name</label>
+                                <input type="text" id="text" name="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput" class="form-label">Contact Number</label>
+                                <input type="tel" id="tel" name="number" class="form-control" placeholder="Enter your number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput" class="form-label">Message</label>
+                                <textarea name="message" class="form-control" id="FormControlTextarea" rows="5" cols="67" required>Type here long texts...</textarea>
+                            </div>
+                            <button class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

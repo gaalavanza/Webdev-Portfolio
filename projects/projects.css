@@ -1,0 +1,132 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+body {
+    background: #1B1212;
+    color: #FFFFFF;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.5s;
+
+}
+
+.navbar a.active {
+    color: #ED45AD;
+}
+
+.navbar a:hover {
+    color: #ED45AD;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+div img {
+    position: relative; 
+    width: 400px;
+    height: 300px;
+    border: 2px solid #FF3D0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 100px 100px 10px 100px;
+    transition: 400ms;
+    vertical-align: top;
+}
+
+div img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+.not-ready {
+    position: relative;
+    text-align: center;
+}
+
+.not-ready p {
+    position: absolute;
+    top: 50%;
+    right: 30%; 
+    background: #FFFF00; 
+    color: #FF0000; 
+    transition: visibility 0s, opacity 0.5s linear; 
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-device-width : 480px) {
+    #aboutPage, #skillsPage, #mainPage, #contactPage {
+        font-size: 10px;
+    }
+
+    div img {
+        width: 250px;
+        height: 180px;
+        margin: 120px 100px 10px 110px;
+    }
+
+    .not-ready p {
+        top: 65%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-device-width: 600px) {  
+    #aboutPage, #skillsPage, #mainPage, #contactPage {
+        font-size: 10px;
+    }
+
+    div img {
+        width: 350px;
+        height: 280px;
+        margin: 120px 100px 5px 100px;
+    }
+
+    .not-ready p {
+        top: 60%;
+        font-size: 15px;
+    }
+}

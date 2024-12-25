@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', san-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #17FFB9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%2317FFB9'/%3E%3Cstop offset='1' stop-color='%23FD2CFF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%234ff3c0'/%3E%3Cstop offset='1' stop-color='%23f22ffa'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%236ee7c8'/%3E%3Cstop offset='1' stop-color='%23e632f4'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%2386dbce'/%3E%3Cstop offset='1' stop-color='%23d935ef'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%239acdd5'/%3E%3Cstop offset='1' stop-color='%23cc37e9'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23abbfdc'/%3E%3Cstop offset='1' stop-color='%23be3ae3'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%23bbafe2'/%3E%3Cstop offset='1' stop-color='%23af3cdd'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23ca9ee8'/%3E%3Cstop offset='1' stop-color='%239e3fd7'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%23d88aee'/%3E%3Cstop offset='1' stop-color='%238b41d1'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23e574f4'/%3E%3Cstop offset='1' stop-color='%237643cb'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%23f158f9'/%3E%3Cstop offset='1' stop-color='%235b45c4'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%23FD2CFF'/%3E%3Cstop offset='1' stop-color='%233447BD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+.container {
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 255, 254, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+
+.clock span {
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after {
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after{
+    content: 'HOURS';
+}
+
+#min::after{
+    content: 'MINS';
+}
+
+#sec::after{
+    content: 'SEC';
+}
